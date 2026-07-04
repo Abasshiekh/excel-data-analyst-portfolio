@@ -1,0 +1,52 @@
+﻿Data Cleaning Practice,,,,,
+,,,,,
+Task:,Raw data file exported from real retialer ordering system having following problems:,,,,
+1,Amount stored as text(currency symbols/commas,,,,
+2,Duplicate orderIDs,,,,
+3,"Inconsistent city name(eg, NY, New York,new york)",,,,
+4,Dates stored as text in mixed formats,,,,
+5,Leading/trailing spaces in names/emails,,,,
+6,Blank Amount cell,,,,
+7,outlier,,,,
+Goal:,"Clean it into trust worthy table, Use Trim,Value,Find & Replace, Remove Duplicates, Text to Column/ DateValue",,,,
+,,,,,
+OrderID,CustomerName,City,OrderDate,Amount,Email
+1001,  Chen Khan  ,New York,09-12-2025,$216.43, chen.khan@mailtest.com
+1002,Grace Khan,Houston,19-Feb-25,47.97,grace.khan@mailtest.com
+1003,Sara Garcia,Los Angeles,20-09-2025,513.9,sara.garcia@mailtest.com
+1004,Grace Wang,Houston,08-Jul-25,$538.55,grace.wang@mailtest.com
+1005,Ivan Adams,New York,23-Mar-25,319.42,ivan.adams@mailtest.com
+1006,John Garcia,los angeles,03-Feb-25,105.11,john.garcia@mailtest.com
+1007,  Zoe Rossi  ,houston ,26-05-2025,$662.16,zoe.rossi@mailtest.com
+1008,Omar Khan,Chicago,02-18-2025,749.88,omar.khan@mailtest.com
+1009,Priya Lee,los angeles,07-10-2025,60.33,priya.lee@mailtest.com
+1010,Maria Petrov,LA,28-02-2025,$782.51, maria.petrov@mailtest.com
+1011,Leo Li,CHICAGO,11-27-2025,163.14,leo.li@mailtest.com
+1012,Fatima Garcia,LA,22-12-2025,556.04,fatima.garcia@mailtest.com
+1013,  John Haddad  ,Los Angeles,15-Mar-25,$257.55,john.haddad@mailtest.com
+1014,Tom Wang,Houston,04-22-2025,761.71,tom.wang@mailtest.com
+1015,Ivan Sharma,Los Angeles,01-26-2025,373.03,ivan.sharma@mailtest.com
+1016,Sara Garcia,houston ,11-12-2025,,sara.garcia@mailtest.com
+1017,Leo Lee,CHICAGO,09-03-2025,237.03,leo.lee@mailtest.com
+1018,Omar Haddad,LA,19-Dec-25,810.08,omar.haddad@mailtest.com
+1019,  Leo Rossi  ,Los Angeles,17-Mar-25,$100.00, leo.rossi@mailtest.com
+1020,Amit Adams,NY,21-03-2025,717.03,amit.adams@mailtest.com
+1011,Leo Patel,NY,13-Jul-25,485.62,leo.patel@mailtest.com
+1022,Omar Adams,New York,24-11-2025,$619.91,omar.adams@mailtest.com
+1023,Omar Petrov,LA,11-11-2025,278.28,omar.petrov@mailtest.com
+1024,John Kim,New York,12-24-2025,875.26,john.kim@mailtest.com
+1025,  Ivan Smith  ,Houston,02-28-2025,$760.67,ivan.smith@mailtest.com
+1026,Omar Patel,Los Angeles,12-03-2025,494.65,omar.patel@mailtest.com
+1027,Ivan Lee,Houston,01-20-2025,449.97,ivan.lee@mailtest.com
+1028,Sara Lee,los angeles,08-05-2025,$231.97, sara.lee@mailtest.com
+1029,Priya Khan,NY,16-12-2025,880.63,priya.khan@mailtest.com
+1030,Omar Petrov,new york,22-Mar-25,853.23,omar.petrov@mailtest.com
+1031,  John Li  ,Houston,14-10-2025,"$18,500.00",john.li@mailtest.com
+1032,Ivan Brown,Los Angeles,10-Dec-25,895.73,ivan.brown@mailtest.com
+1033,Chen Rossi,CHICAGO,15-09-2025,238.16,chen.rossi@mailtest.com
+1034,Sara Rossi,New York,18-10-2025,$537.83,sara.rossi@mailtest.com
+1035,Amit Khan,New York,03-04-2025,776.48,amit.khan@mailtest.com
+1036,Sara Haddad,Los Angeles,22-May-25,208.53,sara.haddad@mailtest.com
+1037,  John Brown  ,houston ,16-10-2025,$710.47, john.brown@mailtest.com
+1038,Ivan Novak,Los Angeles,04-Feb-25,331.78,ivan.novak@mailtest.com
+1006,John Garcia,los angeles,03-Feb-25,105.11,john.garcia@mailtest.com
